@@ -105,6 +105,6 @@ app.use('/', require('./routes/auth.routes'));
 app.use('/sports', require('./routes/sport.routes'))
 
 
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
   console.log('conectado en el puerto 3000')
 })
